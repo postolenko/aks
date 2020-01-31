@@ -223,6 +223,42 @@ $(document).ready(function() {
 
     // ----------------------
 
+    if( $(".brands_slider").length > 0 ) {
+
+        $(".brands_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 600,
+            slidesToShow: 7,
+            slidesToScroll: 1,
+           //  responsive: [
+           //   {
+           //     breakpoint: 1090,
+           //     settings: {
+           //       slidesToShow: 3,
+           //       slidesToScroll: 1
+           //     }
+           //   },
+           //   {
+           //     breakpoint: 900,
+           //     settings: {
+           //       slidesToShow: 2,
+           //       slidesToScroll: 1
+           //     }
+           //   },
+           //   {
+           //     breakpoint: 600,
+           //     settings: {
+           //       slidesToShow: 1,
+           //       slidesToScroll: 1
+           //     }
+           //   }
+           // ]
+        });
+    }
+
 });
 
 
