@@ -186,7 +186,7 @@
 									<li>Производство конструкций “Под ключ”</li>
 									<li>Гарантия 5 лет</li>
 								</ul>
-								<a href="#" class="red_btn">Рассчитать стоимость проекта</a>
+								<a href="#" class="red_btn"  data-toggle="modal" data-target="#enterModal">Рассчитать стоимость проекта</a>
 							</div>
 						</div>
 					</div>
@@ -530,6 +530,44 @@
 
 	</div>
 
+	<!-- Popup -->
+
+	<div class="modal fade" id="enterModal" tabindex="-1" role="dialog" aria-labelledby="enterModal" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	        <div class="modal_inner">
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close_btn"></button>
+				<div class="modal_title">
+					<h2>Заказать консультацию</h2>
+					<p>Оставьте ваши контактные данные и мы свяжемся с вами для уточнения необходимых характеристик под ваш проект</p>
+				</div>
+				<div class="modal_form">
+					<div class="input_wrapp">
+						<label>имя <span class="red">*</span></label>
+						<input type="text" name="#" placeholder="Иван Петров">
+					</div>
+					<div class="input_wrapp">
+						<label>Телефон <span class="red">*</span></label>
+						<input type="text" name="#" placeholder="Иван Петров">
+					</div>
+					<div class="input_wrapp">
+						<label>Комментарий <span class="red">*</span></label>
+						<textarea></textarea>
+					</div>
+					<div class="chekbox">
+						<label for="ch_1"><input type="checkbox" name="modal_ch" id="ch_1">Я согласен на обработку персональных данных</label>
+					</div>
+					<div class="submit_wrapp">
+						<input type="submit" class="red_btn" value="Заказать консультацию" >
+					</div>
+				</div>
+			</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- /Popup -->
+
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
@@ -538,6 +576,7 @@
 	<script src="slick/slick.js"></script>
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap" async defer></script>
 
