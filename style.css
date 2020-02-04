@@ -4420,12 +4420,153 @@ footer {
 
 .modal_inner_2 {
     max-width: 690px;
+    padding: 42px 55px 35px 55px;
 }
 
 .modal_title_2 {
     text-align: center;
 }
 
+.big_fonts_wrapp_2 {
+    padding: 10px 0;
+}
+
+.big_font_2 {
+    margin: 8px;
+    padding: 0 10px;
+}
+
+.big_font_2:nth-child(1):after {
+    width: calc(100% - 19px);
+    left: 10px;
+}
+
+.big_font_2:nth-child(1) .shapes:after {
+    right: 10px;
+}
+
+.big_font_2:nth-child(1) .shapes:before {
+    left: 9px;
+}
+
+.big_font_2:nth-child(2) .shapes:after {
+    right: 8px;
+}
+
+.big_font_2:nth-child(2):after {
+    width: calc(100% - 8px);
+}
+
+.big_font_2 p {
+    font-weight: 600;
+    font-size: 140px;
+    line-height: 100%;
+    color: #1A1D1F;
+}
+
+.items_thumbs_2 .item_thumb {
+    margin: 4px 15px;
+    padding: 0 10px;
+}
+
+.items_thumbs_2 .item_thumb:nth-child(odd) {
+    width: calc(56% - 30px);
+}
+
+.item_thumb:nth-child(even) {
+    width: calc(44% - 30px);
+}
+
+.items_thumbs_2 .item_thumb p {
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.description_box_2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 15px 13px 15px;
+}
+
+.description_box_2 p {
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.modal_inner_2_3 {
+    padding: 42px 45px 12px 45px;
+}
+
+.thumbnails_6 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 10px -12px 0 -12px;
+}
+
+.thumb_6 {
+    width: calc(25% - 24px);
+    margin: 19px 12px;
+}
+
+.thumb_6 .img_box {
+    height: 160px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumb_6 .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.thumb_6 p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.thumbnails_7 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 18px -13px 48px -13px;
+}
+
+.thumb_7 {
+    width: 50%;
+    padding: 15px 13px;
+}
+
+.thumb_7 h3 {
+    padding: 3px 0;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.thumb_7 p {
+    padding: 3px 0;
+    font-size: 12px;
+    line-height: 180%;
+    color: #1A1D1F;
+}
 
 
 /*-- /Bootstrap Modal Styles --*/
