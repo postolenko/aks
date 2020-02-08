@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
 	<title>АКС ГРУПП</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -31,19 +30,25 @@
 					<div class="center_col">
 						<div class="main_nav_wrapp" id="resp_nav">
 							<ul class="main_nav">							
-								<li><a href="#">Продукция</a></li>
+								<li>
+									<a href="#">Продукция</a>
+									<ul class="sub_menu">
+										<li><a href="#">Огнестойкое остекление</a></li>
+										<li><a href="#">Алюминиевое остекление</a></li>
+									</ul>
+								</li>
 								<li><a href="#">Сертификаты</a></li>
 								<li><a href="#">Наши работы</a></li>
 								<li><a href="#">Доставка</a></li>
 								<li><a href="#">Контакты</a></li>
 								<li><a href="#">О компании</a></li>
 							</ul>
+							<div class="resp_nav_thumb">
+								<div class="item_thumb_2 item_thumb_4">
+									<p><a href="tel:84951503976">8 (495) 150 - 39 - 76</a></p>
+								</div>
+							</div>
 						</div>
-						<button class="respmenubtn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
 					</div>
 					<div class="right_col">
 						<ul class="contacts_list">
@@ -51,6 +56,11 @@
 							<li><a href="tel:84951503967">8 (495) 150 - 39 - 67</a></li>
 						</ul>
 					</div>
+					<button class="respmenubtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
 			</div>
 		</div>								
@@ -142,19 +152,23 @@
 							<div class="big_font">
 								<span class="shapes"></span>
 								<p>EIW</p>
+								<p class="num_thumb">1</p>
 							</div>
 							<div class="big_font">
 								<span class="shapes"></span>
 								<p>30</p>
+								<p class="num_thumb">2</p>
 							</div>
 						</div>
 						<div class="items_thumbs">
 							<div class="item_thumb">
+								<p class="num_thumb">1</p>
 								<p><b>E</b> — потеря целостности</p>
 								<p><b>I</b> — потеря теплоизолирующей способности </p>
 								<p><b>W</b> — достижения предельной величины плотности теплового потока на нормируемом расстоянии от необогреваемой поверхности конструкции</p>
 							</div>
 							<div class="item_thumb">
+								<p class="num_thumb">2</p>
 								<p><b>30</b> - предел огнестойкости 30 мин</p>
 							</div>
 						</div>
@@ -184,7 +198,7 @@
 						<div class="thumb_2 shadow">
 							<div class="inner">
 								<div class="thumb_title">
-									<h4>Огнестойкое<br /> остекление</h4>
+									<h4>Огнестойкое остекление</h4>
 								</div>
 								<div class="thumb_descript">
 									<p class="sb">E(EIW)15, E(EIW)30, E(EIW)45, E(EIW)60</p>
@@ -195,7 +209,7 @@
 						<div class="thumb_2 gradient">
 							<div class="inner">
 								<div class="thumb_title">
-									<h4>Алюминиевое<br /> остекление</h4>
+									<h4>Алюминиевое остекление</h4>
 								</div>
 								<div class="thumb_descript">
 									<p>Мы сделаем остекление в том же стиле с обычными стеклопакетами.</p>
@@ -214,6 +228,7 @@
 				<div class="row">
 					<div class="article">
 						<div class="left_col">
+							<img class="resp_vector" src="img/resp_vector.svg" alt="" />
 							<h2>Мы сделаем бесплатный рассчет стоимости проекта по вашему чертежу</h2>
 						</div>
 						<div class="right_col">
@@ -237,7 +252,7 @@
 
 			<section class="sect_6_mp grey_bg_2">
 				<div class="row">
-					<div class="section_title">
+					<div class="section_title resp_left">
 						<h2>Преимущества<br /> алюминиевых конструкций</h2>
 						<p>Преимущества алюминиевых конструкций</p>
 					</div>
@@ -361,8 +376,12 @@
 
 			<!-- Section 9 - Main Page -->
 
-			<section class="grey_bg">
+			<section class="sect_9_mp grey_bg">
 				<div class="row">
+					<div class="section_title section_title_resp">
+						<h2>Наши работы</h2>
+						<p>Выполненные заказы - наша гордость</p>
+					</div>
 					<div class="portfolio_slider">
 						<div class="slide">
 							<a href="#" class="portfolio_thumb">
@@ -433,6 +452,9 @@
 								</div>
 							</a>
 						</div>
+					</div>
+					<div class="resp_btn_wrapp">
+						<a href="#" class="red_btn btn_2">Смотреть все проекты</a>
 					</div>
 				</div>
 			</section>
@@ -551,7 +573,7 @@
 					<div class="grey_box">
 						<div class="inner_flex">
 							<div class="left_col">
-								<h2>Закажите бесплатный выезд на замеры<br /> и мы просчитаем ваш проект</h2>
+								<h2>Закажите бесплатный выезд на замеры и мы просчитаем ваш проект</h2>
 								<p>При заказе алюминиевого остекления из Москвы и МО</p>
 							</div>
 							<div class="right_col">
@@ -568,8 +590,30 @@
 
 			<section class="black_bg">
 				<div class="row">
-					<div class="section_title left_title white_title">
+					<div class="section_title left_title white_title contacts_title">
 						<h2>Контакты</h2>
+					</div>
+					<div class="resp_thumbs">
+						<div class="item_thumb_2 item_thumb_3">
+							<h3>Телефон</h3>
+							<p><a href="tel:84951503976">8 (495) 150 - 39 - 76</a></p>
+						</div>
+						<div class="item_thumb_2 item_thumb_3">
+							<h3>Офис</h3>
+							<p>105005 Москва, улица Казакова, 8с2</p>
+						</div>
+						<div class="item_thumb_2 item_thumb_3">
+							<h3>Производство</h3>
+							<p>143912, МО, г. Балашиха, ул. Звёздная, д. 13, цех №5, офис 27</p>
+						</div>
+						<div class="item_thumb_2 item_thumb_3">
+							<h3>E-mail</h3>
+							<p><a href="mailto:zakaz@aksg.sud">zakaz@aksg.sud</a></p>
+						</div>
+						<div class="item_thumb_2 item_thumb_3">
+							<h3>Время работы</h3>
+							<p>Пн-Пт 9:00-18:00 (по МСК)</p>
+						</div>						
 					</div>
 				</div>
 				<div class="map_wrapp">
@@ -621,7 +665,7 @@
 						</div>
 					</div>
 					<div class="col">
-						<div class="item_thumb_2 item_thumb_3">
+						<div class="item_thumb_2 item_thumb_3 contatc_item">
 							<h3>Обратная связь</h3>
 							<p>Оставьте контакт и мы с вами свяжемся</p>
 						</div>
@@ -632,7 +676,7 @@
 							<div class="input_wrapp">
 								<input type="tel" placeholder="Телефон" >
 							</div>
-							<div class="submit_wrapp">
+							<div class="submit_wrapp resp_submit">
 								<input class="red_btn btn_2" type="submit" value="Заказать звонок" />
 							</div>
 						</div>
@@ -647,11 +691,9 @@
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
-	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/jquery.fancybox.js"></script>
 	<script src="js/scripts.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap" async defer></script>
