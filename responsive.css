@@ -274,6 +274,23 @@
 
 	/*-- /Section 11 - Main Page --*/
 
+	/*-- Section 2 - Cards Page --*/
+
+	.good_thumb {
+	    width: calc(50% - 24px);
+	    min-height: 200px;
+	}
+
+	.good_thumb h3 {
+	    font-size: 18px;
+	}
+
+	.good_thumb .img_box h3 {
+	    font-size: 18px;
+	}
+
+	/*-- /Section 2 - Cards Page --*/
+
 }
 
 
@@ -344,23 +361,6 @@
 	}
 
 	/*-- /Section 11 - Main Page --*/
-
-	/*-- Section 2 - Cards Page --*/
-
-	.good_thumb {
-	    width: calc(50% - 24px);
-	    min-height: 200px;
-	}
-
-	.good_thumb h3 {
-	    font-size: 18px;
-	}
-
-	.good_thumb .img_box h3 {
-	    font-size: 18px;
-	}
-
-	/*-- /Section 2 - Cards Page --*/
 
 	/*-- Footer --*/
 
