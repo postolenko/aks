@@ -893,9 +893,8 @@ ul.sub_menu li a {
 .item_thumb_2.item_thumb_4:before {
     width: 8px;
     height: 8px;
-    top: 8px;
+    top: 6px;
 }
-
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
@@ -4123,8 +4122,17 @@ footer {
     margin: 6px 0;
 }
 
+.resp_contatcs {
+    display: none;
+}
 
+.resp_contatcs .resp_thumbs {
+    margin: 31px 0 -29px 0;
+}
 
+.footer_section h2 {
+    font-size: 40px;
+}
 
 /*-- Bootstrap Modal Styles --*/
 
