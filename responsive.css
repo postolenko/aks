@@ -1343,7 +1343,10 @@ h2 {
 	}
 
 	.delivery_thumb h2:before {
-	    top: 22px;
+	    width: 10px;
+	    height: 10px;
+	    top: 20px;
+	    left: 0;
 	    border: 2px solid #E5343D;
 	}
 
