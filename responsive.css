@@ -665,6 +665,32 @@ h2 {
 
 /*-- /Section 3 - Good Card Page --*/
 
+/*-- Section 2 - Delivery Page --*/
+
+.delivery_thumbnails {
+    margin: 17px 0 73px 0;
+}
+
+.delivery_thumb {
+    width: 100%;
+    margin: 12px 0;
+    min-height: auto;
+    padding: 30px 25px 28px 25px;
+}
+
+.delivery_thumb h2 {
+    padding: 10px 0 0 25px;
+}
+
+.delivery_thumb h2:before {
+    width: 8px;
+    height: 8px;
+    top: 29px;
+    left: 0;
+}
+
+/*-- /Section 2 - Delivery Page --*/
+
 }
 
 
@@ -1299,6 +1325,41 @@ h2 {
 	}
 
 	/*-- /Section 1 - Good Card Page --*/
+
+	/*-- Section 2 - Delivery Page --*/
+
+	.delivery_thumbnails {
+	    margin: 4px 0 20px 0;
+	}
+
+	.delivery_thumb {
+	    padding: 14px 10px 15px 10px;
+	}
+
+	.delivery_thumb h2 {
+		padding: 10px 0 5px 25px;
+	    font-size: 20px;
+	    line-height: 30px;
+	}
+
+	.delivery_thumb h2:before {
+	    top: 22px;
+	    border: 2px solid #E5343D;
+	}
+
+	.delivery_thumb h3 {
+	    padding: 14px 0 10px 0;
+	}
+
+	.table_row .cell:nth-child(odd) {
+	    width: 56%;
+	}
+
+	.table_row .cell:nth-child(even) {
+	    width: 44%;
+	}
+
+	/*-- /Section 2 - Delivery Page --*/
 
 	/*-- Footer --*/
 
