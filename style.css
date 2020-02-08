@@ -2706,8 +2706,9 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     margin-top: 13px;
 }
 
-.filters_link li {
+.filters_link .slide {
     padding: 9px;
+    text-align: center;
 }
 
 .filter_link {
@@ -2791,6 +2792,7 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
 
 .portfolio_thumb_2 .img_box {
     height: 242px;
+    overflow: hidden;
     margin-bottom: 11px;
     position: relative;
 }

@@ -319,6 +319,18 @@ $(document).ready(function() {
 
     // ---------------
 
+    if( $(".filters_link").length > 0 ) {
+        $(".filters_link").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 600,
+            infinite: false,
+            variableWidth: true
+        });
+    }
+
 });
 
 if($("#map").length > 0) {

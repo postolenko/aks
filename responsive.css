@@ -691,6 +691,14 @@ h2 {
 
 /*-- /Section 2 - Delivery Page --*/
 
+/*-- Section 2 - Portfolio Page --*/
+
+.portfolio_thumb_2 {
+    width: calc(50% - 26px);
+}
+
+/*-- /Section 2 - Portfolio Page --*/
+
 }
 
 
@@ -1076,6 +1084,23 @@ h2 {
 	}
 
 	/*-- /Section 3 - Good Card Page --*/
+
+	/*-- Section 2 - Portfolio Page --*/
+
+	.portfolio_thumbnails {
+	    margin: 3px 0 0 0;
+	}
+
+	.portfolio_thumb_2 {
+	    width: 100%;
+    	margin: 22px 0;
+	}
+
+	.button_wrapp {
+	    padding: 0 0 23px 0;
+	}
+
+	/*-- /Section 2 - Portfolio Page --*/
 
 	/*-- Footer --*/
 
