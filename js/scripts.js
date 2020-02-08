@@ -129,7 +129,17 @@ $(document).ready(function() {
             slidesToShow: 1,
             slidesToScroll: 1,
             fade: true,
-            asNavFor: '.miniature_slider'
+            asNavFor: '.miniature_slider',
+            responsive: [
+             {
+               breakpoint: 480,
+               settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
+                 arrows: true
+               }
+             }
+           ]
         });
 
         $(".miniature_slider").not(".slick-initialized").slick({
@@ -142,29 +152,22 @@ $(document).ready(function() {
             slidesToScroll: 1,
             focusOnSelect: true,
             asNavFor: '.big_slider',
-           //  responsive: [
-           //   {
-           //     breakpoint: 1090,
-           //     settings: {
-           //       slidesToShow: 3,
-           //       slidesToScroll: 1
-           //     }
-           //   },
-           //   {
-           //     breakpoint: 900,
-           //     settings: {
-           //       slidesToShow: 2,
-           //       slidesToScroll: 1
-           //     }
-           //   },
-           //   {
-           //     breakpoint: 600,
-           //     settings: {
-           //       slidesToShow: 1,
-           //       slidesToScroll: 1
-           //     }
-           //   }
-           // ]
+            responsive: [
+             {
+               breakpoint: 900,
+               settings: {
+                 slidesToShow: 2,
+                 slidesToScroll: 1
+               }
+             },
+             {
+               breakpoint: 767,
+               settings: {
+                 slidesToShow: 3,
+                 slidesToScroll: 1
+               }
+             }
+           ]
         });
     }
 
@@ -211,41 +214,41 @@ $(document).ready(function() {
 
     // ----------------------
 
-    if( $(".brands_slider").length > 0 ) {
+    // if( $(".brands_slider").length > 0 ) {
 
-        $(".brands_slider").not(".slick-initialized").slick({
-            dots: false,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            speed: 600,
-            slidesToShow: 7,
-            slidesToScroll: 1,
-           //  responsive: [
-           //   {
-           //     breakpoint: 1090,
-           //     settings: {
-           //       slidesToShow: 3,
-           //       slidesToScroll: 1
-           //     }
-           //   },
-           //   {
-           //     breakpoint: 900,
-           //     settings: {
-           //       slidesToShow: 2,
-           //       slidesToScroll: 1
-           //     }
-           //   },
-           //   {
-           //     breakpoint: 600,
-           //     settings: {
-           //       slidesToShow: 1,
-           //       slidesToScroll: 1
-           //     }
-           //   }
-           // ]
-        });
-    }
+    //     $(".brands_slider").not(".slick-initialized").slick({
+    //         dots: false,
+    //         arrows: false,
+    //         autoplay: true,
+    //         autoplaySpeed: 4000,
+    //         speed: 600,
+    //         slidesToShow: 7,
+    //         slidesToScroll: 1,
+    //        //  responsive: [
+    //        //   {
+    //        //     breakpoint: 1090,
+    //        //     settings: {
+    //        //       slidesToShow: 3,
+    //        //       slidesToScroll: 1
+    //        //     }
+    //        //   },
+    //        //   {
+    //        //     breakpoint: 900,
+    //        //     settings: {
+    //        //       slidesToShow: 2,
+    //        //       slidesToScroll: 1
+    //        //     }
+    //        //   },
+    //        //   {
+    //        //     breakpoint: 600,
+    //        //     settings: {
+    //        //       slidesToShow: 1,
+    //        //       slidesToScroll: 1
+    //        //     }
+    //        //   }
+    //        // ]
+    //     });
+    // }
 
     // -----------------------
 

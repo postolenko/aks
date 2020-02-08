@@ -3733,7 +3733,8 @@ span.tooltip.question {
 
 .two_cols_templ_2 .right_col .grey_wrapp {
     height: 100%;
-    margin: 10px 0 0 0;
+    margin: 9px 0;
+    padding: 1px 0;
     background-color: #F7F7F7;
 }
 
@@ -3811,7 +3812,7 @@ span.tooltip.question {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: 23px 30px;
+    margin: 22px 30px;
 }
 
 .thumb_5 {
@@ -3867,17 +3868,20 @@ span.tooltip.question {
 
 /*-- Section 2 - Good Card Page --*/
 
-.brands_slider {
+.brands {
     margin: 46px 0 76px 0;
-}
-
-.brands_slider .slide {
-
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
 }
 
 .brand_thumb {
     display: block;
-    height: 60px;
+    height: 50px;
+    width: 170px;
     position: relative;
     display: flex;
     display: -webkit-flex;

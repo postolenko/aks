@@ -291,6 +291,43 @@
 
 	/*-- /Section 2 - Cards Page --*/
 
+	/*-- Section 1 - Good Card Page --*/
+
+	.two_cols_templ_2 {
+		display: block;
+	}
+
+	.two_cols_templ_2 .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.two_cols_templ_2 .right_col {
+	    width: 100%;
+	    margin-top: 63px;
+	    padding-top: 12px;
+	    padding-left: 0;
+	    position: relative;
+	}
+
+	.two_cols_templ_2 .right_col > div {
+		position: relative;
+		z-index: 2;
+	}
+
+	.two_cols_templ_2 .right_col:after {
+		display: block;
+		content: "";
+		width: calc(100% + 50px);
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: -25px;
+		background-color: #F7F7F7;
+	}
+
+	/*-- /Section 1 - Good Card Page --*/
+
 }
 
 
@@ -532,6 +569,101 @@ h2 {
 }
 
 /*-- /Section 1 - Cards Page --*/
+
+/*-- Section 1 - Good Card Page --*/
+
+.good_slider_templ {
+    margin-left: 0;
+}
+
+.good_slider_templ .left_col {
+    width: 100%;
+    padding-right: 0;
+}
+
+.good_slider_templ .right_col {
+    width: 100%;
+    padding: 10px 0 0 0;
+    padding-left: 0;
+}
+
+/*-- /Section 1 - Good Card Page --*/
+
+/*-- Section 1 - Good Card Page --*/
+
+.two_cols_templ_2 h2 .grey {
+	display: none;
+}
+
+.table_2 .table_row {
+    margin: 10px 0;
+}
+
+.thumbmails_5 {
+    margin: 23px 0;
+}
+
+.two_cols_templ_2 .left_col {
+	position: relative;
+}
+
+.two_cols_templ_2 .left_col > div {
+	position: relative;
+	z-index: 2;
+}
+
+.two_cols_templ_2 .left_col:before {
+	content: "";
+	width: calc(100% + 50px);
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -25px;
+	background-color: #F7F7F7;
+}
+
+.table_2 .table_row {
+	margin: 0 -24px;
+	padding: 16px 25px 20px 26px;
+	align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+.table_2 .table_row:nth-child(even) {
+	background-color: #ffffff;
+}
+
+.table_2 .table_row:nth-child(even) .cell > div {
+    background-color: #ffffff;
+}
+
+.table_2 .table_row:nth-child(odd) .cell > div {
+    background-color: #F7F7F7;
+}
+
+.table_2 .table_row:before {
+	display: none;
+}
+
+.table_2 .table_row .cell:nth-child(1) {
+    width: 46%;
+}
+
+.table_2 .table_row .cell:nth-child(2) {
+    width: 54%;
+}
+
+/*-- /Section 1 - Good Card Page --*/
+
+/*-- Section 3 - Good Card Page --*/
+
+.tree_cols_text {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+}
+
+/*-- /Section 3 - Good Card Page --*/
 
 }
 
@@ -879,6 +1011,46 @@ h2 {
 
 	/*-- /Section 2 - Cards Page --*/
 
+	/*-- Section 2 - Good Card Page --*/
+
+	.brands {
+	    margin: 23px 0;
+	}
+
+	.resp_center {
+		text-align: center;
+	}
+
+	.brand_thumb {
+	    height: 40px;
+		width: 74px;
+    	margin: 2px 6px;
+	}
+
+	/*-- /Section 2 - Good Card Page --*/
+
+	/*-- Section 3 - Good Card Page --*/
+
+	.sect_3_gcp {
+	    padding-top: 50px;
+	}
+
+	.tree_cols_text {
+	    margin: 30px 0 10px 0;
+	    column-count: 1;
+	    -moz-column-count: 1;
+	    -webkit-column-count: 1;
+	    column-gap: 0;
+	    -moz-column-gap: 0;
+	    -webkit-column-gap: 0;
+	}
+
+	.select_wrapp span.tooltip_content {
+	    left: -70px;
+	}
+
+	/*-- /Section 3 - Good Card Page --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col:nth-child(1) {
@@ -1075,6 +1247,58 @@ h2 {
 	}
 
 	/*-- /Section 11 - Main Page --*/
+
+	/*-- Section 1 - Good Card Page --*/
+
+	.good_slider_templ {
+	    margin-top: 17px;
+	}
+
+	.good_slider_templ .left_col {
+	    padding: 0 0 12px 0;
+	}
+
+	.miniature_slider {
+		display: none !important;
+	}
+
+	.big_slider .img_box {
+	    height: 186px;
+	}
+
+	.big_slider .slick-prev {
+	    left: 18px;
+	}
+
+	.big_slider .slick-next {
+	    right: 18px;
+	}
+
+	/*-- /Section 1 - Good Card Page --*/
+
+	/*-- Section 1 - Good Card Page --*/
+
+	.two_cols_templ_2 h2 {
+	    padding: 16px 0;
+	    font-size: 20px;
+	    line-height: 30px;
+	}
+
+	.two_cols_templ_2 .right_col .grey_wrapp {
+	    margin: 0 -15px 0 -15px;
+	}
+
+	.thumbmails_5 {
+	    margin: 0 0 22px 0;
+	}
+
+	.thumb_5 {
+	    width: 100%;
+	    margin: 16px 15px;
+	    padding: 0 0 28px 0;
+	}
+
+	/*-- /Section 1 - Good Card Page --*/
 
 	/*-- Footer --*/
 
