@@ -753,6 +753,19 @@ h2 {
 
 /*-- /Section 2 - Project Page --*/
 
+/*-- Section 2 - Setificates Page --*/
+
+.sertificate {
+	text-align: left;
+	width: 244px !important;
+}
+
+.sertificate .img_box {
+    height: 344px;
+}
+
+/*-- /Section 2 - Setificates Page --*/
+
 }
 
 

@@ -52,6 +52,22 @@ function getPortfolioSlider() {
   }
 }
 
+function getSertificatesSlider() {
+    if( $(".sertificates_resp_sl").length > 0 ) {
+      if(bodyWidth <= 768) {
+        $(".sertificates_resp_sl").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            speed: 600,
+            infinite: false,
+            variableWidth: true
+        });
+      } else if( $(".sertificates_resp_sl").hasClass("slick-initialized")) {
+          $(".sertificates_resp_sl").slick("unslick");
+      }
+  }
+}
+
 
 var w = window,
 d = document,
@@ -73,6 +89,7 @@ $(window).resize(function() {
   getFiltersSliderParams();
   getProjectsSlider();
   getPortfolioSlider();
+  getSertificatesSlider();
 
 });
 
@@ -90,6 +107,7 @@ $(document).ready(function() {
     getFiltersSliderParams();
     getProjectsSlider();
     getPortfolioSlider();
+    getSertificatesSlider();
 
     if( $(".promo_slider").length > 0 ) {
         var indexActive;
