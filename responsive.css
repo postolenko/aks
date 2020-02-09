@@ -399,6 +399,26 @@
 
 	/*-- /Section 11 - Main Page --*/
 
+	/*-- Section 2 - Project Page --*/
+
+	.two_cols_templ .left_col {
+	    width: 33.33%;
+	}
+
+	.two_cols_templ .right_col {
+	    width: 66.66%;
+	}
+
+	/*-- /Section 2 - Project Page --*/
+
+	/*-- Section 2 - Project Page --*/
+
+	.project {
+	    width: calc(33.33% - 24px);
+	}
+
+	/*-- /Section 2 - Project Page --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col {
@@ -699,6 +719,40 @@ h2 {
 
 /*-- /Section 2 - Portfolio Page --*/
 
+/*-- Section 2 - Project Page --*/
+
+.sect_2_pp {
+    padding: 10px 0 28px 0;
+}
+
+.projects_thumbnails .slick-slide {
+	padding: 0 12px;
+	text-align: center;
+}
+
+.project {
+	display: inline-block;
+	vertical-align: top;
+    width: 220px !important;
+    height: 290px;
+    margin: 12px 0;
+}
+
+.portfolio_thumbnails_2 {
+	margin-bottom: 17px !important;
+}
+
+.resp_portfolio_slider .slick-slide {
+	padding: 0 10px;
+}
+
+.resp_portfolio_slider .portfolio_thumb_2 {
+	width: 240px !important;
+	margin: 10px 0;
+}
+
+/*-- /Section 2 - Project Page --*/
+
 }
 
 
@@ -740,6 +794,20 @@ h2 {
 	}
 
 	/*-- /Section 4 - Main Page --*/
+
+	/*-- Section 2 - Project Page --*/
+
+	.two_cols_templ .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.two_cols_templ .right_col {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	/*-- /Section 2 - Project Page --*/
 
 }
 
@@ -1101,6 +1169,24 @@ h2 {
 	}
 
 	/*-- /Section 2 - Portfolio Page --*/
+
+	/*-- Section 2 - Project Page --*/
+
+	.two_cols_text {
+	    width: 100%;
+	    column-count: unset;
+	    -moz-column-count: unset;
+	    -webkit-column-count: unset;
+	    column-gap: unset;
+	    -moz-column-gap: unset;
+	    -webkit-column-gap: unset;
+	}
+
+	.thumb_5_2 {
+	    margin-bottom: 21px;
+	}
+
+	/*-- /Section 2 - Project 
 
 	/*-- Footer --*/
 

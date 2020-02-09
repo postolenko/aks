@@ -2878,7 +2878,7 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
 }
 
 .inner_wrapp {
-    width: 1012px;
+    max-width: 1012px;
     margin: 0 auto;
 }
 
@@ -2917,15 +2917,15 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     color: #000000;
 }
 
-.thumb_5 {
+.thumb_5_2 {
     margin-bottom: 28px;   
 }
 
-.two_cols_templ .thumb_5 {
+.two_cols_templ .thumb_5_2 {
     max-width: 170px;
 }
 
-.thumb_5 h4 {
+.thumb_5_2 h4 {
     padding-bottom: 6px;
     font-family: Open Sans;
     font-weight: bold;
@@ -2934,7 +2934,7 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     color: #000000;
 }
 
-.thumb_5 p {
+.thumb_5_2 p {
     padding-bottom: 6px;
     font-weight: 300;
     font-size: 14px;
@@ -2964,6 +2964,7 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     display: block;
     width: calc(20% - 24px);
     margin: 12px;
+    height: 225px;
     overflow: hidden;
     position: relative;
 }
@@ -2972,7 +2973,16 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     display: block;
     width: auto;
     height: auto;
-    width: 100%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     filter: grayscale(100%);
     -webkit-transition-property: filter;
     -webkit-transition-duration: .3s;

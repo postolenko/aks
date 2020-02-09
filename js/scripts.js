@@ -20,6 +20,39 @@ function getFiltersSliderParams() {
     }
 }
 
+function getProjectsSlider() {
+    if( $(".projects_thumbnails").length > 0 ) {
+      if(bodyWidth <= 768) {
+        $(".projects_thumbnails").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            speed: 600,
+            infinite: false,
+            variableWidth: true
+        });
+      } else if( $(".projects_thumbnails").hasClass("slick-initialized")) {
+          $(".projects_thumbnails").slick("unslick");
+      }
+  }
+}
+
+function getPortfolioSlider() {
+    if( $(".resp_portfolio_slider").length > 0 ) {
+      if(bodyWidth <= 768) {
+        $(".resp_portfolio_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            speed: 600,
+            infinite: true,
+            variableWidth: true
+        });
+      } else if( $(".resp_portfolio_slider").hasClass("slick-initialized")) {
+          $(".resp_portfolio_slider").slick("unslick");
+      }
+  }
+}
+
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -38,6 +71,8 @@ $(window).resize(function() {
   getHeaderSiteParams();
   bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
   getFiltersSliderParams();
+  getProjectsSlider();
+  getPortfolioSlider();
 
 });
 
@@ -53,6 +88,8 @@ $(document).ready(function() {
 
     getHeaderSiteParams();
     getFiltersSliderParams();
+    getProjectsSlider();
+    getPortfolioSlider();
 
     if( $(".promo_slider").length > 0 ) {
         var indexActive;
@@ -228,44 +265,6 @@ $(document).ready(function() {
             $(".dropdown_select").removeClass("active");
         }
     });
-
-    // ----------------------
-
-    // if( $(".brands_slider").length > 0 ) {
-
-    //     $(".brands_slider").not(".slick-initialized").slick({
-    //         dots: false,
-    //         arrows: false,
-    //         autoplay: true,
-    //         autoplaySpeed: 4000,
-    //         speed: 600,
-    //         slidesToShow: 7,
-    //         slidesToScroll: 1,
-    //        //  responsive: [
-    //        //   {
-    //        //     breakpoint: 1090,
-    //        //     settings: {
-    //        //       slidesToShow: 3,
-    //        //       slidesToScroll: 1
-    //        //     }
-    //        //   },
-    //        //   {
-    //        //     breakpoint: 900,
-    //        //     settings: {
-    //        //       slidesToShow: 2,
-    //        //       slidesToScroll: 1
-    //        //     }
-    //        //   },
-    //        //   {
-    //        //     breakpoint: 600,
-    //        //     settings: {
-    //        //       slidesToShow: 1,
-    //        //       slidesToScroll: 1
-    //        //     }
-    //        //   }
-    //        // ]
-    //     });
-    // }
 
     // -----------------------
 
