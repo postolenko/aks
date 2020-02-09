@@ -766,6 +766,68 @@ h2 {
 
 /*-- /Section 2 - Setificates Page --*/
 
+/*-- Section 2 - About Page --*/
+
+.article_4 {
+    margin: 0;
+}
+
+.article_4 .left_col {
+    width: 100%;
+    padding: 11px 0;
+}
+
+.article_4 .right_col {
+    width: 100%;
+    padding: 11px 0;
+}
+
+.article_4 .img_box img {
+    max-height: 345px;
+    min-width: auto;
+    min-height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+
+.article_4:nth-child(even) .left_col {
+    width: 100%;
+    padding: 10px 0;    
+}
+
+.article_4:nth-child(even) .right_col {
+    padding: 0;
+    order: 2;
+}
+
+.article_4 h2 {
+    padding: 8px 0;
+}
+
+.testimonials_wrapp {
+	padding-top: 15px;
+}
+
+.testimonials_thumbails {
+    margin: 40px -12px 58px -12px;
+}
+
+.testimonials_thumbails .slick-slide {
+	padding: 0 10px;
+}
+
+.testimonial_thumb {
+    display: block;
+    width: 233px;
+    height: 319px;
+    margin: 0 auto;
+}
+
+/*-- /Section 2 - About Page --*/
+
 }
 
 
@@ -1487,6 +1549,23 @@ h2 {
 	}
 
 	/*-- /Section 2 - Delivery Page --*/
+
+	/*-- Section 2 - About Page --*/
+
+	.article_4 {
+	    margin: 0 0 5px 0;
+	}
+
+	.article_4 h2 {
+	    font-size: 20px;
+	    line-height: 30px;
+	}
+
+	.article_4 .img_box img {
+	    max-height: 250px;
+	}
+
+	/*-- .Section 2 - About Page --*/
 
 	/*-- Footer --*/
 

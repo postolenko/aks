@@ -893,7 +893,8 @@ ul.sub_menu li a {
 .item_thumb_2.item_thumb_4:before {
     width: 8px;
     height: 8px;
-    top: 6px;
+    /*top: 6px;*/
+    top: 8px;
 }
 
 /*-------------------------------------------*/
@@ -3354,7 +3355,9 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
 }
 
 .testimonial_thumb img {
-
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .testimonial_thumb i {
