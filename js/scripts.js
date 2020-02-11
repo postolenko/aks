@@ -488,6 +488,8 @@ $(document).ready(function() {
       //   });
       // },
       // prepviewTemplate: this.element,
+      uploadMultiple: true,
+      parallelUploads: 10,
       addedfile: function(file) {
         // console.log(this);
         console.log(file);
