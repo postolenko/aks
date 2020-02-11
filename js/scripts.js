@@ -489,7 +489,8 @@ $(document).ready(function() {
       // },
       // prepviewTemplate: this.element,
       addedfile: function(file) {
-        console.log(this);
+        // console.log(this);
+        console.log(file);
         // file.previewElement = Dropzone.createElement(this.options.previewTemplate);
         // // Now attach this new element some where in your page
         // console.log(file.previewElement);
