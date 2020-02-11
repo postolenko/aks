@@ -472,7 +472,8 @@ $(document).ready(function() {
 
     // ----------------
 
-   $("input[type='file']").dropzone({
+   // $("input[type='file']").dropzone({
+    var myDropZone = new Dropzone("input[type='file']",{
     // $(".upload_file label").dropzone({
       url: "/file/post",
       // init: function() {
