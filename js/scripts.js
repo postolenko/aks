@@ -389,12 +389,8 @@ $(document).ready(function() {
       e.preventDefault();
       parentBlock = $(this).closest(".sub_inner");
       attr = parentBlock.attr("id");
+      $("a[href='#"+ attr +"']").removeClass("active");
       parentBlock.removeClass("visible");
-      $(".sub_menu a").each(function() {
-        if($(this).attr("href") == attr) {
-          $(this).removeClass("active");
-        }
-      });
     });
 
     // -- Tabs --
