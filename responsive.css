@@ -993,6 +993,11 @@ h2 {
 	    top: 6px;
 	}
 
+	.good_thumbs_small {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+
 	/*-- /Header --*/
 
 	/*-- Section 1 - Main Page --*/
