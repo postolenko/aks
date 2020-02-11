@@ -32,10 +32,6 @@
 							<ul class="main_nav">							
 								<li>
 									<a href="#" data-tabs-link = "tabs_1">Продукция</a>
-									<!-- <ul class="sub_menu">
-										<li><a href="#">Огнестойкое остекление</a></li>
-										<li><a href="#">Алюминиевое остекление</a></li>
-									</ul> -->
 								</li>
 								<li><a href="#">Сертификаты</a></li>
 								<li><a href="#">Наши работы</a></li>
@@ -288,7 +284,7 @@
 									</ul>
 								</div>
 								<h1>ОГНЕСТОЙКОЕ АЛЮМИНИЕВОЕ ОСТЕКЛЕНИЕ ПОД КЛЮЧ</h1>
-								<a href="#" class="red_btn">Узнать стоимость</a>
+								<a href="#" class="red_btn" data-toggle="modal" data-target="#enterModal">Узнать стоимость</a>
 							</div>
 							<div>
 								<div class="params_thumbs">
@@ -891,12 +887,63 @@
 
 	</div>
 
+	<!-- Popup -->
+
+	<div class="modal fade" id="enterModal" tabindex="-1" role="dialog" aria-labelledby="enterModal" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	        <div class="modal_inner">
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close_btn"></button>
+				<div class="modal_title">
+					<h2>Быстрый расчет стоимости</h2>
+					<p>Приложите свой проект или чертеж, и мы сделаем экспресс-смету с указанием сроков реализации проекта</p>
+				</div>
+				<div class="modal_form">
+					<form>
+						<div class="inputs">
+							<div class="input_wrapp_2">
+								<label>имя <span class="red">*</span></label>
+								<input type="text" name="#" placeholder="Иван Петров" />
+							</div>
+							<div class="input_wrapp_2">
+								<label>Телефон <span class="red">*</span></label>
+								<input type="tel" name="#" placeholder="8 (495) 150 - 39 - 67" />
+							</div>
+							<div class="input_wrapp_2">
+								<label>Прикрепить чертеж</label>
+								<div class="upload_file">
+									<label for="file_02"><i class="clip"></i><span>Перетащите файл, или нажмите</span></label>
+									<input type="file" id="file_02" name="#" />
+								</div>							
+							</div>
+							<div class="input_wrapp_2">
+								<label>Комментарий</label>
+								<textarea></textarea>
+							</div>
+						</div>
+						<div class="chekbox_wrapp">
+							<label for="ch_2" class="chekbox"><input checked type="checkbox" name="modal_ch" id="ch_2">Я согласен на обработку персональных данных</label>
+						</div>
+						<div class="submit_wrapp">
+							<input type="submit" class="red_btn btn_2" value="Рассчитать стоимость проекта" />
+						</div>
+					</form>
+				</div>
+			</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- /Popup -->
+
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
 	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/dropzone.js"></script>
+	<script src="vendors/js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap" async defer></script>
 

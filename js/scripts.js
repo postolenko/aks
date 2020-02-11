@@ -470,6 +470,32 @@ $(document).ready(function() {
         }
     });
 
+    // ----------------
+
+   // $("input[type='file']").dropzone({
+    $(".upload_file label").dropzone({
+      url: "/file/post",
+      // init: function() {
+      //   this.on("addedfile", function(file) { 
+      //     // id = this.element.attributes.for.value;
+      //     // $("[for = '"+id+"']").html(file.name);
+      //     // this.html(file.name);
+      //     // this.element.innerHTML = file.name;
+      //     // console.log(file);
+      //     // console.log(file.name);
+      //     console.log(file.previewTemplate);
+      //     // console.log(file.name);
+      //   });
+      // },
+      // prepviewTemplate: this.element,
+      addedfile: function(file) {
+        console.log(this);
+        // file.previewElement = Dropzone.createElement(this.options.previewTemplate);
+        // // Now attach this new element some where in your page
+        // console.log(file.previewElement);
+      }
+    });
+
 });
 
 if($("#map").length > 0) {

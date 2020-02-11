@@ -1006,13 +1006,9 @@ h2 {
 	}
 
 	.good_thumb_small {
-	    /*display: block;*/
 	    width: 100%;
 	    margin: 10px 0;
 	    padding: 18px 45px 10px 25px;
-/*	    min-height: 122px;
-	    background: #F7F7F7;
-	    position: relative;*/
 	}
 
 	/*-- /Header --*/
@@ -1382,7 +1378,7 @@ h2 {
 	}
 
 	.modal_form .red_btn {
-	    font-size: 14px;
+	    font-size: 13px;
 	}
 
 	.items_thumbs_2 {

@@ -2056,6 +2056,7 @@ p.sb {
 
 .portfolio_thumb .img_box {
     height: 315px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -4620,7 +4621,7 @@ footer {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    /*max-width: 500px;*/
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
@@ -4786,6 +4787,7 @@ footer {
 }
 
 .upload_file {
+    height: 38px;
     border: 1px dashed #D6D7D9;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
