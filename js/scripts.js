@@ -472,8 +472,8 @@ $(document).ready(function() {
 
     // ----------------
 
-   // $("input[type='file']").dropzone({
-    $(".upload_file label").dropzone({
+   $("input[type='file']").dropzone({
+    // $(".upload_file label").dropzone({
       url: "/file/post",
       // init: function() {
       //   this.on("addedfile", function(file) { 
@@ -492,7 +492,7 @@ $(document).ready(function() {
       parallelUploads: 10,
       addedfile: function(file) {
         // console.log(this);
-        console.log(file);
+        console.log(file.name);
         // file.previewElement = Dropzone.createElement(this.options.previewTemplate);
         // // Now attach this new element some where in your page
         // console.log(file.previewElement);
