@@ -478,27 +478,8 @@ $(document).ready(function() {
     // var myDropZone = new Dropzone("input[type='file']",{
     $("input[type='file']").dropzone({
       url: "/file/post",
-      // init: function() {
-      //   this.on("addedfile", function(file) { 
-      //     // id = this.element.attributes.for.value;
-      //     // $("[for = '"+id+"']").html(file.name);
-      //     // this.html(file.name);
-      //     // this.element.innerHTML = file.name;
-      //     // console.log(file);
-      //     // console.log(file.name);
-      //     console.log(file.previewTemplate);
-      //     // console.log(file.name);
-      //   });
-      // },
-      // prepviewTemplate: this.element,
-      uploadMultiple: true,
-      parallelUploads: 10,
       addedfile: function(file) {
-        // console.log(this);
         console.log(file.name);
-        // file.previewElement = Dropzone.createElement(this.options.previewTemplate);
-        // // Now attach this new element some where in your page
-        // console.log(file.previewElement);
       }
     });
 
