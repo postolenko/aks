@@ -998,10 +998,10 @@ header {
 .sub_inner {
     background-color: #ffffff;
     width: 100%;
-    min-height: 100%;
-    padding: 26px 20px;
+    height: 0;
+    padding: 26px 20px 50px 20px;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     position: absolute;
     top: 0;
     right: -120%;
@@ -1026,7 +1026,13 @@ header {
     transition-timing-function: ease;
 }
 
-.sub_inner.visible {
+.sub_inner.activated {
+    min-height: 100%;
+    height: auto;
+    overflow-y: auto;
+}
+
+.sub_inner.activated.visible {
     right: 0;
 }
 

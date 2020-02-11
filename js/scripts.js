@@ -372,8 +372,10 @@ $(document).ready(function() {
       if($(this).hasClass("active")) {
         $(this).removeClass("active");
         $(".sub_inner"+attr).removeClass("visible");
+        $(".sub_inner"+attr).removeClass("activated");
       } else {
         $(this).addClass("active");
+        $(".sub_inner"+attr).addClass("activated");
         $(".sub_inner"+attr).addClass("visible");
       }
     });
@@ -391,6 +393,9 @@ $(document).ready(function() {
       attr = parentBlock.attr("id");
       $("a[href='#"+ attr +"']").removeClass("active");
       parentBlock.removeClass("visible");
+      setTimeout(function() {
+        parentBlock.removeClass("activated");
+      }, 400);      
     });
 
     // -- Tabs --
