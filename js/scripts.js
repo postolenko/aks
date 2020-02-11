@@ -475,8 +475,8 @@ $(document).ready(function() {
     Dropzone.autoDiscover = false;
 
    // $("input[type='file']").dropzone({
-    var myDropZone = new Dropzone("input[type='file']",{
-    // $(".upload_file label").dropzone({
+    // var myDropZone = new Dropzone("input[type='file']",{
+    $("input[type='file']").dropzone({
       url: "/file/post",
       // init: function() {
       //   this.on("addedfile", function(file) { 
