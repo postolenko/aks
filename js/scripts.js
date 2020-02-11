@@ -478,6 +478,7 @@ $(document).ready(function() {
     // var myDropZone = new Dropzone("input[type='file']",{
     $("input[type='file']").dropzone({
       url: "/file/post",
+      clickable: "input[type='file']",
       addedfile: function(file) {
         console.log(file.name);
       }
