@@ -4787,18 +4787,18 @@ footer {
 }
 
 .upload_file {
-/*    height: 38px;
+    height: 38px;
     border: 1px dashed #D6D7D9;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
     cursor: pointer;
-    position: relative;*/
+    position: relative;
 }
 
 .upload_file input {
     /*padding-left: 5px;*/
-    display: block;
+/*    display: block;
     font-family: Open Sans;
     font-weight: bold;
     font-size: 10px;
@@ -4812,7 +4812,15 @@ footer {
     -moz-border-radius: 2px;
     border-radius: 2px;
     cursor: pointer;
-    position: relative;
+    position: relative;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: -1;
 }
 
 .upload_file input:before {
@@ -4827,13 +4835,23 @@ footer {
     background-size: contain;
 }
 
-/*.upload_file label {
+.upload_file label {
     display: block;
     cursor: pointer;
     padding: 11px 15px 6px 15px;
-}*/
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    color: #444647;
+    opacity: .5;
+}
 
-/*.clip {
+.upload_file label.selected {
+    opacity: 1;
+}
+
+.clip {
     display: inline-block;
     vertical-align: top;
     width: 20px;
@@ -4842,7 +4860,7 @@ footer {
     background-position: center;
     background-image: url(img/clip.svg);
     background-size: contain;
-}*/
+}
 
 .upload_file label .clip {
     position: relative;

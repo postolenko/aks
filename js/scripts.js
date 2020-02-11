@@ -470,18 +470,11 @@ $(document).ready(function() {
         }
     });
 
-    // ----------------
+    // -----------
 
-    Dropzone.autoDiscover = false;
-
-   // $("input[type='file']").dropzone({
-    // var myDropZone = new Dropzone("input[type='file']",{
-    $("input[type='file']").dropzone({
-      url: "/file/post",
-      clickable: "input[type='file']",
-      addedfile: function(file) {
-        console.log(file.name);
-      }
+    $("input[type='file']").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings("label").addClass("selected").html(fileName);
     });
 
 });
