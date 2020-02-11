@@ -322,22 +322,6 @@ a:active {
     -webkit-tap-highlight-color: transparent;
 }
 
-input {
-
-}
-
-input:focus {
-
-}
-
-textarea {
-
-}
-
-textarea:focus {
-
-}
-
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
@@ -555,10 +539,6 @@ textarea:focus {
     border-bottom: 1px solid #E5E5E5;
 }
 
-.header_site_wrapp .row {
-
-}
-
 .header_site {
     display: flex;
     display: -webkit-flex;
@@ -652,7 +632,6 @@ textarea:focus {
     position: relative;
 }
 
-
 .main_nav li a {
     display: block;
     position: relative;
@@ -663,7 +642,6 @@ textarea:focus {
     line-height: 16px;
     color: #1A1D1F;
 }
-
 
 .main_nav li a:after {
     content: "";
@@ -867,7 +845,6 @@ textarea:focus {
 .item_thumb_2.item_thumb_4:before {
     width: 8px;
     height: 8px;
-    /*top: 6px;*/
     top: 8px;
 }
 
@@ -975,7 +952,6 @@ header {
     position: relative;
     top: 0;
     left: -99999999px;
-    /*padding: 9px 45px 33px 45px;*/
     -webkit-transition-property: opacity;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1671,10 +1647,6 @@ p .red {
     color: #E5343D;
 }
 
-.item_thumb p b {
-
-}
-
 .descript_row {
     position: relative;
 }
@@ -2165,10 +2137,6 @@ p.sb {
     transform: translate(-50%, -50%);
 }
 
-.portfolio_thumb .mask p {
-
-}
-
 .portfolio_thumb .descript {
     padding-top: 44px;
     text-align: center;
@@ -2207,10 +2175,6 @@ p.sb {
 
 .sect_10_mp {
     padding: 37px 0 45px 0;
-}
-
-.white_title {
-
 }
 
 .white_title h2 {
@@ -2276,10 +2240,6 @@ p.sb {
     margin: 46px -12px;
 }
 
-.steps_slider .slide {
-
-}
-
 .step_thumb {
     min-height: 269px;
     margin: 12px;
@@ -2321,10 +2281,6 @@ p.sb {
     line-height: 22px;
     text-transform: uppercase;
     color: #000000;
-}
-
-.step_thumb p {
-
 }
 
 span.tooltip {
@@ -3464,10 +3420,6 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     color: #1A1D1F;
 }
 
-.table {
-
-}
-
 .table p {
     padding: 0;
     font-weight: normal;
@@ -3516,10 +3468,6 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
 .gradient_bottom .row {
     position: relative;
     z-index: 2;
-}
-
-.articles_4_wrapp {
-
 }
 
 .article_4 {
@@ -3578,10 +3526,6 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-.article_4 ol  {
-
 }
 
 .article_4 ol li {
@@ -3737,18 +3681,6 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     max-width: 625px;
 }
 
-.big_slider_wrapp {
-
-}
-
-.big_slider {
-
-}
-
-.big_slider .slide {
-
-}
-
 .big_slider .img_box {
     height: 410px;
     position: relative;
@@ -3839,10 +3771,6 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
 
 .miniature_slider .slide:hover img {
     filter: grayscale(0);
-}
-
-.goodcard_desc {
-
 }
 
 .price {
@@ -4018,10 +3946,6 @@ span.tooltip.question {
 
 /*-- /Dropdown Select --*/
 
-.check_mark {
-
-}
-
 .check_mark li {
     padding: 3px 0 3px 20px;
     position: relative;
@@ -4084,10 +4008,6 @@ span.tooltip.question {
 
 .grey {
     color: #D6D7D9;
-}
-
-.table_2 {
-
 }
 
 .table_2 .table_row {
@@ -4271,10 +4191,6 @@ span.tooltip.question {
 
 .sect_3_gcp {
     padding-top: 61px;
-}
-
-.text_sect {
-
 }
 
 .text_sect h3 {
@@ -4595,6 +4511,10 @@ footer {
   outline: 0;
 }
 
+.modal-content_2 {
+    max-width: 690px;
+}
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -4623,7 +4543,6 @@ footer {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    /*max-width: 500px;*/
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
@@ -5024,27 +4943,4 @@ footer {
     color: #1A1D1F;
 }
 
-
 /*-- /Bootstrap Modal Styles --*/
-
-
-
-.bg {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .9);
-    z-index: 3;
-}
-
-.modals {
-    width: 100%;
-    min-height: 100%;
-    padding: 20px 0 100px 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}

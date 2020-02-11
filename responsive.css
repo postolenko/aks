@@ -95,9 +95,6 @@
 	}
 
 	.main_nav_wrapp {
-/*		width: 100%;
-	    margin: 5px 0;
-	    border-top: 1px solid #E5E5E5;*/
 	    display: none;
 	}
 
@@ -167,20 +164,6 @@
 	.resp_nav_thumb {
 	    display: block;
 	}
-
-/*	.main_nav_resp li .sub_menu {
-	    display: none;
-	    min-width: 240px;
-	    padding: 10px 15px;
-	    position: absolute;
-	    top: 100%;
-	    left: 0;
-	    margin-top: -1px;
-	    background-color: #ffffff;
-	    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
-	    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
-	    box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
-	}*/
 
 	#resp_nav .main_nav_resp li > a.active + .sub_menu {
 	    display: block;
@@ -890,10 +873,6 @@ h2 {
     padding: 14px 0 0 0;
 }
 
-.items_thumbs_2 {
-
-}
-
 .items_thumbs_2 .item_thumb p.num_thumb {
     top: 0;
 }
@@ -919,7 +898,6 @@ h2 {
 /*-- /Popup --*/
 
 }
-
 
 @media only screen and (max-width: 700px) {
 
@@ -1009,6 +987,10 @@ h2 {
 	    width: 100%;
 	    margin: 10px 0;
 	    padding: 18px 45px 10px 25px;
+	}
+
+	.item_thumb_2.item_thumb_4:before {
+	    top: 6px;
 	}
 
 	/*-- /Header --*/
@@ -1153,11 +1135,12 @@ h2 {
 
 	/*-- Section 7 - Main Page --*/
 
-/*	.article_2_bg {
-	    background: -webkit-linear-gradient(90deg, rgba(26, 29, 31, 0.9) 0%, rgba(26, 29, 31, 0.63) 34.82%, rgba(26, 29, 31, 0) 59.08%), url(img/bg_2_resp.jpg);
-	    background: -moz-linear-gradient(90deg, rgba(26, 29, 31, 0.9) 0%, rgba(26, 29, 31, 0.63) 34.82%, rgba(26, 29, 31, 0) 59.08%), url(img/bg_2_resp.jpg);
-	    background: linear-gradient(90deg, rgba(26, 29, 31, 0.9) 0%, rgba(26, 29, 31, 0.63) 34.82%, rgba(26, 29, 31, 0) 59.08%), url(img/bg_2_resp.jpg);
-	}*/
+	.article_2_bg {
+	    background: -webkit-linear-gradient(90deg, rgba(26, 29, 31, 0.9) 0%, rgba(26, 29, 31, 0.63) 60%, rgba(26, 29, 31, 0) 90%), url(img/bg_2_resp.jpg);
+	    background: -moz-linear-gradient(90deg, rgba(26, 29, 31, 0.9) 0%, rgba(26, 29, 31, 0.63) 60%, rgba(26, 29, 31, 0) 90%), url(img/bg_2_resp.jpg);
+	    background: linear-gradient(90deg, rgba(26, 29, 31, 0.9) 0%, rgba(26, 29, 31, 0.63) 60%, rgba(26, 29, 31, 0) 90%), url(img/bg_2_resp.jpg);
+		background-size: cover;
+	}
 
 	.article_2_desc {
 		text-align: center;
@@ -1382,7 +1365,7 @@ h2 {
 	}
 
 	.items_thumbs_2 {
-	    margin: 28px -10px 10px -10px;
+	    margin: 28px 0 10px -10px;
 	}
 
 	.items_thumbs_2 .item_thumb {
@@ -1764,6 +1747,18 @@ h2 {
 	}
 
 	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 350px) {
+
+	/*-- Popup --*/
+
+	.big_font p {
+	    font-size: 60px;
+	}
+
+	/*-- /Popup --*/
 
 }
 
