@@ -433,7 +433,7 @@
 							<div class="vector_article">
 								<div class="col_1">
 									<p>Приложите свой проект или чертеж, и наш специалист сделает экспресс-смету с указанием сроков реализации проекта</p>
-									<a href="#" class="red_btn btn_2">Рассчитать стоимость проекта</a>
+									<a href="#" class="red_btn btn_2" data-toggle="modal" data-target="#enterModal">Рассчитать стоимость проекта</a>
 								</div>
 								<div class="col_2">
 									<img src="img/vector.svg" alt="" />
@@ -775,7 +775,7 @@
 								<p>При заказе алюминиевого остекления из Москвы и МО</p>
 							</div>
 							<div class="right_col">
-								<a href="#" class="red_btn">Заказать звонок</a>
+								<a href="#" class="red_btn" data-toggle="modal" data-target="#enterModal2">Заказать звонок</a>
 							</div>
 						</div>
 					</div>
@@ -931,6 +931,44 @@
 				</div>
 			</div>
 	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="enterModal2" tabindex="-1" role="dialog" aria-labelledby="enterModal" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	  		<div class="modal_inner">
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close_btn"></button>
+				<div class="modal_title">
+					<h2>Заказать консультацию</h2>
+					<p>Оставьте ваши контактные данные и мы свяжемся с вами для уточнения необходимых характеристик под ваш проект</p>
+				</div>
+				<div class="modal_form">
+					<form>
+						<div class="inputs">
+							<div class="input_wrapp_2">
+								<label>имя <span class="red">*</span></label>
+								<input type="text" name="#" placeholder="Иван Петров" />
+							</div>
+							<div class="input_wrapp_2">
+								<label>Телефон <span class="red">*</span></label>
+								<input type="tel" name="#" placeholder="8 (495) 150 - 39 - 67" />
+							</div>
+							<div class="input_wrapp_2">
+								<label>Комментарий</label>
+								<textarea></textarea>
+							</div>
+						</div>
+						<div class="chekbox_wrapp">
+							<label for="ch_3" class="chekbox"><input checked type="checkbox" name="modal_ch" id="ch_3">Я согласен на обработку персональных данных</label>
+						</div>
+						<div class="submit_wrapp">
+							<input type="submit" class="red_btn btn_2" value="Заказать консультацию" >
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	  </div>
 	</div>
 
