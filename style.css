@@ -2990,17 +2990,35 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
 /*-- Section 2 - Portfolio Page --*/
 
 .filters_link {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: center;
-    -webkit-justify-content: center;
     margin-top: 13px;
 }
 
+.filters_link .slick-track {
+    width: auto;
+    margin: 0;
+    transform: auto;
+    text-align: none;
+}
+
+.filters_link .slick-slide {
+    display: block;
+    float: left;
+}
+
+.filters_link.desktop .slick-track {
+    width: 100% !important;
+    margin: 0 auto;
+    transform: none !important;
+    text-align: center;
+}
+
+.filters_link.desktop .slick-slide {
+    display: inline-block !important;
+    float: none;
+}
+
 .filters_link .slide {
-    padding: 9px;
+    padding: 9px 0;
     text-align: center;
 }
 
@@ -3008,6 +3026,7 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     display: inline-block;
     vertical-align: top;
     height: 40px;
+    margin: 9px;
     padding: 9px 20px 10px 20px;
     background: transparent;
     border: 1px solid #D6D7D9;

@@ -5,19 +5,11 @@ function getHeaderSiteParams() {
 }
 
 function getFiltersSliderParams() {
-    if( $(".filters_link").length > 0 ) {
-      if( bodyWidth <= 900) {
-        $(".filters_link").not(".slick-initialized").slick({
-            dots: false,
-            arrows: false,
-            speed: 600,
-            infinite: false,
-            variableWidth: true
-        });
-      } else if( $(".filters_link").hasClass("slick-initialized")) {
-          $(".filters_link").slick("unslick");
-      }
-    }
+  if( bodyWidth <= 900) {
+    $(".filters_link").removeClass("desktop");
+  } else  {
+    $(".filters_link").addClass("desktop");
+  }
 }
 
 function getProjectsSlider() {
@@ -417,34 +409,23 @@ $(document).ready(function() {
     $(".tabs").each(function() {
         $(this).find(".tab_link").each(function() {
             if( $(this).hasClass("active") ) {
-                indexActiveTab = $(this).index(".tab_link");
-                $(this).click();
+                indexActiveTab = $(this).index();
                 return false;
             } else {
                 indexActiveTab = 0;
-                $(this).find(".tab_link").eq(0).addClass("active");
+                $(this).find(".tab_link:eq("+indexActiveTab+")").addClass("active");           
             }
+            // return true;
         });
-        attrForTabLink = $(this).find(".tab_link:eq("+indexActiveTab+")").attr("for");
-        activeTabRadio = $(this).find(".radio_tab[id = '"+ attrForTabLink +"']");
-        activeTabRadio.prop("checked", true);        
+        $(this).find(".tab_link:eq("+indexActiveTab+")").click();
     });
 
-    $(".tab_link").click(function (e) {
-        if( $(this).hasClass("active") ) {
-            e.preventDefault();
-        } else {
-            tabsParent = $(this).closest(".tabs");
-            attrForTabLink = $(this).attr("for");
-            activeTabRadio = tabsParent.find(".radio_tab[id = '"+ attrForTabLink +"']");
-            activeTabRadio.prop("checked", true);
-            tabsParent.find(".tab_link").each(function () {                
-                if( $(this).hasClass("active") ) {
-                    $(this).removeClass("active");
-                }
-            });
-            $(this).addClass("active");
-        }
+    $(".tab_link").click(function() {
+        tabsParent = $(this).closest(".tabs");
+        attrForTabLink = $(this).attr("for");
+        activeTabRadio = $("#"+ attrForTabLink);
+        tabsParent.find(".tab_link").removeClass("active");
+        $(this).addClass("active");
     });
 
     // ----------------
@@ -480,6 +461,30 @@ $(document).ready(function() {
       var fileName = $(this).val().split("\\").pop();
       $(this).siblings("label").addClass("selected").html(fileName);
     });
+
+    // -----------
+
+    if( $(".filters_link").length > 0) {
+      $(".filters_link").on('init', function() {
+        $(this).find(".filter_link").each(function() {
+            if( $(this).hasClass("active") ) {
+                indexActiveTab = $(this).index();
+                return false;
+            } else {
+                indexActiveTab = 0;
+                $(this).find(".filter_link:eq("+indexActiveTab+")").addClass("active");           
+            }
+        });
+        $(this).find(".filter_link:eq("+indexActiveTab+")").click();
+      });
+      $(".filters_link").not(".slick-initialized").slick({
+          dots: false,
+          arrows: false,
+          speed: 600,
+          infinite: false,
+          variableWidth: true
+      });
+    }
 
 });
 
