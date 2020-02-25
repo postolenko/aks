@@ -949,8 +949,8 @@ header {
     min-height: auto;
     opacity: 0;
     z-index: -1;
-    position: relative;
-    top: 0;
+    position: absolute;
+    top: -100%;
     left: -99999999px;
     -webkit-transition-property: opacity;
     -webkit-transition-duration: .3s;
@@ -973,14 +973,18 @@ header {
     transition-timing-function: ease;
 }
 
-.tabs.activated .tab {
-    position: absolute;
-}
-
 .tabs_content .radio_tab:checked + .tab {
     z-index: 1;
     position: relative;
     opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+body.loading {
+    width: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
 }
 
@@ -1416,27 +1420,30 @@ header {
     color: #1A1D1F;
 }
 
-.promo_slider {
+.promo_slider_box {
     margin: 9px 0;
+    position: relative;
+}
+
+.promo_slider {    
     position: relative;
     -webkit-box-shadow: -8px 8px 20px rgba(0, 0, 0, .09);
     -moz-box-shadow: -8px 8px 20px rgba(0, 0, 0, .09);
     box-shadow: -8px 8px 20px rgba(0, 0, 0, .09);
 }
 
-.promo_slider:after {
-    content: "";
-    width: 156px;
+.load_line {
+    width: 0;
     height: 2px;
     background-color: #E5343D;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; 
 }
 
 .promo_slider .slide .img_box {
     height: 246px;
-    width: 392px;
+    width: 100%;
     margin-bottom: -4px;
     background-position: center;
     background-size: cover;
@@ -3061,6 +3068,10 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
     color: #ffffff;
 }
 
+.tabs_content_2 {
+    width: 100%;
+}
+
 .portfolio_thumbnails {
     display: flex;
     display: -webkit-flex;
@@ -3072,7 +3083,7 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
 .portfolio_thumb_2 {
     display: block;
     width: calc(33.33% - 26px);
-    margin: 36px 13px;
+    margin: 40px 13px;
     text-align: center;
 }
 
@@ -3147,7 +3158,7 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"] {
 }
 
 .button_wrapp {
-    padding: 10px 0 23px 0;
+    padding: 5px 0 23px 0;
     text-align: center;
 }
 
@@ -4401,6 +4412,85 @@ footer {
 .footer_section h2 {
     font-size: 40px;
 }
+
+/*-- Callback Button --*/
+
+.callback_btn {
+    display: block;
+    width: 64px;
+    height: 64px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+    background-color: #E5343D;
+    background-image: url(img/call_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    bottom: 50px;
+    right: 2%;
+    z-index: 20;
+    opacity: 1;
+    -webkit-animation: callbackopacity 3s infinite;
+    -moz-animation:    callbackopacity 3s infinite;
+    -o-animation:      callbackopacity 3s infinite;
+    animation:         callbackopacity 3s infinite;
+}
+
+@keyframes callbackopacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes callbackopacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes callbackopacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes callbackopacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.callback_btn:hover {
+    animation: none;
+}
+
+/*-- /Callback Button --*/
 
 /*-- Bootstrap Modal Styles --*/
 

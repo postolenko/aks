@@ -126,20 +126,28 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 var attr, dataTab, subInner;
 
+$(window).on("load", function() {
+  $("body").removeClass("loading");
+});
+
 $(window).resize(function() {
 
-  getHeaderSiteParams();
-  bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
-  getFiltersSliderParams();
-  getProjectsSlider();
-  getPortfolioSlider();
-  getSertificatesSlider();
-  getTestimonialSlider();
-  getPopupSlider();
+    getHeaderSiteParams();
+    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+    getFiltersSliderParams();
+    getProjectsSlider();
+    getPortfolioSlider();
+    getSertificatesSlider();
+    getTestimonialSlider();
+    getPopupSlider();
 
 });
 
 $(document).ready(function() {
+
+    if($(".tabs").length > 0) {
+      $("body").addClass("loading");
+    }
 
     getHeaderSiteParams();
     getFiltersSliderParams();
@@ -154,26 +162,32 @@ $(document).ready(function() {
 
     if( $(".promo_slider").length > 0 ) {
         var indexActive;
+        var autoplayspeed = parseInt( $(".promo_slider").attr("data-autoplayspeed") );
         $(".promo_slider").on('init', function() {
             indexActive = parseInt($(".promo_slider .slick-current").attr("data-slick-index"));
             $(".current_page").html(indexActive+1);
             $(".count_pages").html($(".promo_slider .slide").length);
+            $(".load_line").css({"width" : 0});
+            $(".load_line").animate({"width" : "100%"},autoplayspeed);
         });
 
         $('.promo_slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
           $(".current_page").html(currentSlide+1);
+          $(".load_line").css({"width" : 0});
+          $(".load_line").animate({"width" : "100%"},autoplayspeed);
         });
 
         $(".promo_slider").not(".slick-initialized").slick({
             dots: false,
             arrows: true,
             autoplay: true,
-            autoplaySpeed: 4000,
+            autoplaySpeed: autoplayspeed,
             speed: 600,
             slidesToShow: 1,
             slidesToScroll: 1,
             fade: true
         });
+
     }
 
 
@@ -408,14 +422,12 @@ $(document).ready(function() {
                 return false;
             } else {
                 indexActiveTab = 0;
+                $(this).find(".tab_link").eq(0).addClass("active");
             }
         });
-        attrForTabLink = $(this).find(".tab_link").eq(indexActiveTab).attr("for");
+        attrForTabLink = $(this).find(".tab_link:eq("+indexActiveTab+")").attr("for");
         activeTabRadio = $(this).find(".radio_tab[id = '"+ attrForTabLink +"']");
-        activeTabRadio.prop("checked", true);
-        $(this).find(".tab_link").eq(indexActiveTab).addClass("active");
-        $(this).addClass("activated");
-
+        activeTabRadio.prop("checked", true);        
     });
 
     $(".tab_link").click(function (e) {

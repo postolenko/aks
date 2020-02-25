@@ -952,6 +952,15 @@ h2 {
 
 	/*-- /Section 2 - Project Page --*/
 
+	/*-- Callback Button --*/
+
+	.callback_btn {
+	    width: 40px;
+	    height: 40px;
+	}
+
+	/*-- /Callback Button --*/
+
 }
 
 @media only screen and (max-width: 600px) {
