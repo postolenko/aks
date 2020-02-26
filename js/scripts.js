@@ -315,6 +315,7 @@ $(document).ready(function() {
         } else {
           activeValue.html(value);
         }
+        parentBlock.removeClass("active");
     });
 
     $(document).mouseup(function (e){
@@ -415,7 +416,6 @@ $(document).ready(function() {
                 indexActiveTab = 0;
                 $(this).find(".tab_link:eq("+indexActiveTab+")").addClass("active");           
             }
-            // return true;
         });
         $(this).find(".tab_link:eq("+indexActiveTab+")").click();
     });
