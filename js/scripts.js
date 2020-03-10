@@ -165,6 +165,7 @@ $(document).ready(function() {
 
         $('.promo_slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
           $(".current_page").html(currentSlide+1);
+          $(".load_line").animate(false);
           $(".load_line").css({"width" : 0});
           $(".load_line").animate({"width" : "100%"},autoplayspeed);
         });
