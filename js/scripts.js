@@ -178,7 +178,7 @@ $(document).ready(function() {
             speed: 600,
             slidesToShow: 1,
             slidesToScroll: 1,
-            fade: true
+            // fade: true
         });
 
     }
